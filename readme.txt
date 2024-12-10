@@ -19,12 +19,21 @@ git reset HEAD readme.txt   回到当前上传的分支
 直接删掉就可以，再使用git rm或者git add
 
 远程同步
+上传
 git push -u origin master 第一次上传，关联本地和远程库
 git push origin master
+
+git push <远程主机名> <本地分支名>:<远程分支名>
+如果本地分支名与远程分支名相同，则可以省略冒号
+
+拉取
+git pull <远程主机名> <远程分支名>:<本地分支名>
+git pull origin next:master   若与本地当前分支合并，则可以省略冒号与后面的部分
 
 要关联一个远程库，使用命令git remote add origin git@server-name:path/repo-name.git；
 git remote add origin git@github.com:FayesFixer/learngit.git
 
 关联一个远程库时必须给远程库指定一个名字，origin是默认习惯命名；
 
-解除同步关系 git remote rm origin  
+解除同步关系
+ git remote rm origin
