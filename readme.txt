@@ -37,3 +37,6 @@ git remote add origin git@github.com:FayesFixer/learngit.git
 
 解除同步关系
  git remote rm origin
+
+存在版本冲突时，如何融合，即本地和云端都有修改时？？
+
