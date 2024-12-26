@@ -1,3 +1,7 @@
+
+git init   新建初始化本地仓库
+
+
 Git is a distributed version control system.
 Git is free software.
 git diff 比较被修改的内容(本地当前状态与上次add的内容)
@@ -25,6 +29,7 @@ git push origin master
 
 git push <远程主机名> <本地分支名>:<远程分支名>
 如果本地分支名与远程分支名相同，则可以省略冒号
+###原因：两个分支名字与冒号中间不能存在空格，删掉空格就O了！（有点好笑
 
 拉取
 git pull <远程主机名> <远程分支名>:<本地分支名>
